@@ -24,12 +24,9 @@ p {
 
 .footer {
     margin-top: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
-.space {
-    height: 20em;
-}
 
 .slash {
     padding: 0;
@@ -42,3 +39,9 @@ p {
 .current {
     color: #000480;
 }
+
+.only {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+

@@ -10,19 +10,29 @@ $(document).ready(function(){
 
     function click_cat (str1, str2) {
         $(str1).click(function(){
+            $('.header').removeClass('only');
             $('.cat').parent().addClass('hidden');
             $(str2).removeClass('hidden');
         });
     }
 
+    $('.name').click(function(){
+        $('.cat').parent().addClass('hidden');
+        $('.header').addClass('only');
+    });
+
     click_cat('.span1', '.school');
     click_cat('.span2', '.work');
     click_cat('.span3', '.other');
-    click_cat('.name', '.space');
 
 
     changeColor();
     setInterval(changeColor, 5000);
+
+    $( window ).resize(function(){
+        changeColor();
+        console.log('hi');
+    });
 
 
     function changeColor(){

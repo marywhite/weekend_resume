@@ -17,6 +17,7 @@ her github, and the words school, work, and other just below. Clicking on one of
  all content from the main display area.
  Mary White's current position (student at Prime Digital Academy) will be colored navy blue instead of the standard 
  black font used for other text.
+
  
  __Device:__ Mary White's resume is designed to accommodate desktop, tablet, and mobile devices. Header, footer, 
  and main content, will all scale accordingly to optimize readability and view.
