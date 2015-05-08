@@ -26,6 +26,10 @@ p {
     margin-bottom: 1em;
 }
 
-.cat {
+.space {
     height: 20em;
+}
+
+.slash {
+    padding: 0;
 }

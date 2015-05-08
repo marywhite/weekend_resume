@@ -8,21 +8,21 @@ $(document).ready(function(){
     $(".research").load(path + " .research p");
     $(".if").load(path + " .if p");
 
-    $('.span1').click(function(){
-        $('.cat').parent().addClass('hidden');
-        $('.school').removeClass('hidden');
-    });
+    function click_cat (str1, str2) {
+        $(str1).click(function(){
+            $('.cat').parent().addClass('hidden');
+            $(str2).removeClass('hidden');
+        });
+    }
 
-    $('.span2').click(function(){
-        $('.cat').parent().addClass('hidden');
-        $('.work').removeClass('hidden');
-    });
+    click_cat('.span1', '.school');
+    click_cat('.span2', '.work');
+    click_cat('.span3', '.other');
 
-    $('.span3').click(function(){
-        $('.cat').parent().addClass('hidden');
-        $('.other').removeClass('hidden');
-    });
-
+//reset on click
+//    setInterval(function() {
+//        $('.slash').toggleClass('.change');
+//    }, 800);
 
 });
 
