@@ -16,6 +16,7 @@ p {
     border-right: 1px solid black;
 }
 
+
 .hi {
     margin-top: 1em;
     margin-bottom: 2em;
@@ -32,4 +33,8 @@ p {
 
 .slash {
     padding: 0;
+}
+
+.select {
+    color: coral;
 }
