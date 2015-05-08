@@ -36,5 +36,9 @@ p {
 }
 
 .select {
-    color: coral;
+    color: #ff4e35;
+}
+
+.current {
+    color: #000480;
 }

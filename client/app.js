@@ -21,30 +21,26 @@ $(document).ready(function(){
     click_cat('.name', '.space');
 
 
-    setInterval(function() {
+    changeColor();
+    setInterval(changeColor, 5000);
+
+
+    function changeColor(){
         randomSlash('.hi');
         randomSlash('.footer');
-    }, 5000);
-
-
+    }
 
     function randomSlash(str){
         $(str).children().removeClass('select');
         var children = ($(str).children(':visible').length);
         var child = randomNumber(0, children-1);
         $(str + " div:visible").eq(child).addClass('select');
+
     }
 
     function randomNumber(min, max) {
             return Math.floor(Math.random() * (1 + max - min) + min);
     }
-
-    randomSlash();
-
-//reset on click
-//    setInterval(function() {
-//        $('.slash').toggleClass('.change');
-//    }, 800);
 
 });
 
