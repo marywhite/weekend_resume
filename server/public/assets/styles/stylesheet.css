@@ -1,9 +1,5 @@
 body {
-    font-family: 'PT Mono';
-}
-
-.me {
-    position: fixed;
+    font-family: 'PT Mono', sans-serif;
 }
 
 p {
@@ -18,4 +14,18 @@ p {
 .cat {
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+.hi {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.cat {
+    height: 20em;
 }
