@@ -5,3 +5,17 @@ body {
 .me {
     position: fixed;
 }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    margin: 2em 1em;
+}
+
+.cat {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
