@@ -8,7 +8,7 @@
 7 info start resume_heroku@1.0.0
 8 verbose unsafe-perm in lifecycle true
 9 info resume_heroku@1.0.0 Failed to exec start script
-10 verbose stack Error: resume_heroku@1.0.0 start: `npm server/app.js`
+10 verbose stack Error: resume_heroku@1.0.0 start: `node server/app.js`
 10 verbose stack Exit status 1
 10 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
 10 verbose stack     at EventEmitter.emit (events.js:110:17)
@@ -17,19 +17,19 @@
 10 verbose stack     at maybeClose (child_process.js:1015:16)
 10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
 11 verbose pkgid resume_heroku@1.0.0
-12 verbose cwd /Users/mwhite/Desktop/resume_heroku
+12 verbose cwd /Users/mwhite/Desktop/weekend_heroku
 13 error Darwin 14.0.0
 14 error argv "node" "/usr/local/bin/npm" "start"
 15 error node v0.12.2
 16 error npm  v2.7.5
 17 error code ELIFECYCLE
-18 error resume_heroku@1.0.0 start: `npm server/app.js`
+18 error resume_heroku@1.0.0 start: `node server/app.js`
 18 error Exit status 1
-19 error Failed at the resume_heroku@1.0.0 start script 'npm server/app.js'.
+19 error Failed at the resume_heroku@1.0.0 start script 'node server/app.js'.
 19 error This is most likely a problem with the resume_heroku package,
 19 error not with npm itself.
 19 error Tell the author that this fails on your system:
-19 error     npm server/app.js
+19 error     node server/app.js
 19 error You can get their info via:
 19 error     npm owner ls resume_heroku
 19 error There is likely additional logging output above.

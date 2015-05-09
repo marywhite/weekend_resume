@@ -1,0 +1,32 @@
+{
+  "Resume": [
+    {"type": "school",
+      "name": "Prime Digital Academy --- 2015-present",
+      "position": "student software engineer",
+      "description": "Beta cohort member actively engaging with industry relevant technologies in real world development scenarios. Fully immersed in all things javascript."},
+    {"type": "school",
+      "name": "Macalester College --- 2010-2013 ",
+      "position": "b.a. in psychology & women's, gender, & sexuality studies",
+      "description": "coursework: introduction to scientific programming, lives in context, object oriented programming"},
+    {"type": "work",
+      "name": "Hola Arepa --- may 2014-december 2014",
+      "position": "server",
+      "description": "Delivered friendly service at one of the most anticipated new restaurants in the Twin Cities. Constantly considered and employed new solutions to improve team workflow during peak service hours."},
+    {"type": "work",
+      "name": "Macalester College --- september 2014-december 2014",
+      "position": "teaching assistant",
+      "description": "Provided academic and personal guidance to first-year Macalester students. Met with students individually to discuss assignments during inceptive and final stages of writing. Worked closely with professors in planning lessons and selecting key readings to address course goals."},
+    {"type": "work",
+      "name": "Macalester College --- january 2011-december 2012",
+      "position": "research assistant",
+      "description": "Created and implemented surveys examining feelings of national belonging among first and second-generation immigrants living in the United States. Relied on current research in cultural studies to inform hypotheses and empirical strategies carried out in the study."},
+    {"type": "talk",
+      "name": "Invisible Friend --- december 2013-june 2014",
+      "position": "development intern",
+      "description": "Collaboratively discussed and actualized marketing strategies to create interest and intrigue among community members. Crafted beta landing page to effectively represent brand during early stages of development."},
+    {"type": "talk",
+      "name": "contact",
+      "position": "software minneapolis",
+      "description": "maryk.december@gmail.com"}
+  ]
+}
