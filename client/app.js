@@ -11,7 +11,7 @@ function getResume() {
     });
 }
 
-//append templates to index
+//get template
 function getTemplate(){
     $.ajax({
         url: '/template',
@@ -22,6 +22,7 @@ function getTemplate(){
         });
     }
 
+//module stuff
 function getRandom (){
     $.ajax({
         url: '/random',
@@ -31,7 +32,7 @@ function getRandom (){
         }
     })
 }
-
+//get template and append resume data
 function addInfo(){
     var item;
     var el;
@@ -47,7 +48,14 @@ function addInfo(){
 }
 
 $(document).ready(function(){
+
     getResume();
+
+    //hide resume info with name click
+    $('.me').click(function(){
+        $('.resume').children().addClass('hidden');
+        $('.header').addClass('only');
+    });
 
     //handlers for category clicks
     reveal('.span1', '.school');
@@ -57,9 +65,9 @@ $(document).ready(function(){
 
     function reveal(str1, str2) {
         $(str1).click(function(){
+            $('.header').removeClass('only');
             $('.resume').children().addClass('hidden');
             $(str2).removeClass('hidden');
         });
     }
-
 });
