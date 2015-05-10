@@ -22,6 +22,16 @@ function getTemplate(){
         });
     }
 
+function getRandom (){
+    $.ajax({
+        url: '/random',
+        success: function(res){
+            console.log('this worked');
+            console.log(res.sayHi());
+        }
+    })
+}
+
 function addInfo(){
     var item;
     var el;
@@ -37,19 +47,19 @@ function addInfo(){
 }
 
 $(document).ready(function(){
-    $('.span1').click(check);
+    getResume();
+
+    //handlers for category clicks
+    reveal('.span1', '.school');
+    reveal('.span2', '.work');
+    reveal('.span3', '.talk');
+
+
+    function reveal(str1, str2) {
+        $(str1).click(function(){
+            $('.resume').children().addClass('hidden');
+            $(str2).removeClass('hidden');
+        });
+    }
 
 });
-
-function check(){
-    if (!resumeData){
-        getResume();
-        (console.log('this'));
-    } else if (!template) {
-        addTemplate();
-        console.log('no that');
-    } else {
-        addInfo();
-        console.log('nahhh');
-    }
-}
