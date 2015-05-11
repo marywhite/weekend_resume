@@ -40,11 +40,8 @@ p {
     color: #000480;
 }
 
-/*.only {*/
-    /*margin-top: 10em;*/
-    /*margin-bottom: 10em;*/
-/*}*/
-
 .only {
-    margin-top: 15em;
+    margin-top: 10em;
+    margin-bottom: 10em;
 }
+

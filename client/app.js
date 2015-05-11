@@ -44,6 +44,9 @@ function addInfo(){
         el.children('.name').html(item.name);
         el.children('.position').html(item.position);
         el.children('.description').html(item.description);
+        if (i == 0){
+            el.addClass('current');
+        }
     }
 }
 
