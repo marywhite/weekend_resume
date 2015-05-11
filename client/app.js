@@ -36,10 +36,9 @@ function getRandom () {
 }
 
 function addRandom() {
-    $('.me').append(random.name);
-    $('.me').append(random.relationship);
+    $('.me').append("<p>" + random.name + "</p>");
+    $('.me').append("<p>" + random.relationship + "</p>");
 }
-
 
 //get template and append resume data
 function addInfo(){
