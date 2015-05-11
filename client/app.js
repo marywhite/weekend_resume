@@ -1,5 +1,6 @@
 var resumeData;
 var template;
+var random;
 
 function getResume() {
     $.ajax({
@@ -24,10 +25,22 @@ function getTemplate(){
 
 //module stuff
 function getRandom () {
-    $.getJSON( "/random", function( data ) {
-    console.log(data);
+    $.ajax({
+        url: '/random',
+        dataType: "json",
+        success: function(res){
+            random = res;
+            addRandom()
+        }
     });
 }
+
+function addRandom() {
+    $('.me').append(random.name);
+    $('.me').append(random.relationship);
+}
+
+
 //get template and append resume data
 function addInfo(){
     var item;
@@ -49,12 +62,12 @@ function addInfo(){
 $(document).ready(function(){
 
     getResume();
-    getRandom();
 
     //hide resume info with name click
     $('.me').click(function(){
         $('.resume').children().addClass('hidden');
         $('.header').addClass('only');
+        getRandom()
     });
 
     //handlers for category clicks
