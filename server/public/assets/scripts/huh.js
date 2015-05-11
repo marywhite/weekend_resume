@@ -1,11 +1,8 @@
-var random_num = function() {
+var me = function() {
     return {
         name: "mary",
         relationship: "bff",
-        sayHi: function() {
-            return 5;
-        }
     }
 };
 
-module.exports = random_num;
+module.exports = me;
