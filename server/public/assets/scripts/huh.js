@@ -9,4 +9,3 @@ var random_num = function() {
 };
 
 module.exports = random_num;
-

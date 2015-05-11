@@ -23,14 +23,10 @@ function getTemplate(){
     }
 
 //module stuff
-function getRandom (){
-    $.ajax({
-        url: '/random',
-        success: function(res){
-            console.log('this worked');
-            console.log(res.sayHi());
-        }
-    })
+function getRandom () {
+    $.getJSON( "/random", function( data ) {
+    console.log(data);
+    });
 }
 //get template and append resume data
 function addInfo(){
@@ -53,6 +49,7 @@ function addInfo(){
 $(document).ready(function(){
 
     getResume();
+    getRandom();
 
     //hide resume info with name click
     $('.me').click(function(){
