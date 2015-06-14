@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var wut = require('./public/assets/scripts/huh');
+
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -14,10 +14,6 @@ app.get('/template', function(request, response){
     response.sendFile(path.join(__dirname, './public/views/templates/category.html'));
 });
 
-
-app.get('/random', function(req, res){
-    res.send(wut());
-});
 
 app.get('/*', function(request, response){
     var file = request.params[0] || 'views/index.html';

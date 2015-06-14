@@ -23,22 +23,6 @@ function getTemplate(){
         });
     }
 
-//module stuff
-function getRandom () {
-    $.ajax({
-        url: '/random',
-        dataType: "json",
-        success: function(res){
-            random = res;
-            addRandom()
-        }
-    });
-}
-
-function addRandom() {
-    $('.me').append("<p>" + random.name + "</p>");
-    $('.me').append("<p>" + random.relationship + "</p>");
-}
 
 //get template and append resume data
 function addInfo(){
@@ -66,7 +50,6 @@ $(document).ready(function(){
     $('.me').click(function(){
         $('.resume').children().addClass('hidden');
         $('.header').addClass('only');
-        getRandom()
     });
 
     //handlers for category clicks
