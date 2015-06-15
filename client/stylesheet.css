@@ -7,6 +7,10 @@ p {
     padding: 0;
 }
 
+.me, span {
+    cursor: pointer;
+}
+
 .item{
     margin: 2em 1em;
 }
